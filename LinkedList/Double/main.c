@@ -10,7 +10,6 @@ struct node {
 };
 
 struct node *head = NULL;
-struct node *prev = NULL;
 struct node *current = NULL;
 
 void print() {
