@@ -35,9 +35,6 @@ void print() {
 void insertEmpty(int data, struct node** headRef, struct node** tailRef) {
     struct node* link = (struct node*) malloc(sizeof(struct node));
     link->data = data;
-    if ((*headRef) == NULL) {
-        printf("head is null");
-    }
     link->next = (*headRef);
     link->prev = NULL;
     if ((*headRef) != NULL) {
